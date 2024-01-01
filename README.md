@@ -10,11 +10,55 @@
       font-family: 'Arial', sans-serif;
       margin: 20px;
       padding: 20px;
-      background-color: #f8f8f8;
+      background: linear-gradient(45deg, #FFD700, #FF8C00, #FF0000, #8B008B, #4B0082, #0000FF, #008000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     h1 {
       color: #333;
+      animation: rainbowText 5s infinite;
+    }
+
+    @keyframes rainbowText {
+      0% {
+        color: red;
+      }
+
+      20% {
+        color: orange;
+      }
+
+      40% {
+        color: yellow;
+      }
+
+      60% {
+        color: green;
+      }
+
+      80% {
+        color: blue;
+      }
+
+      100% {
+        color: violet;
+      }
     }
 
     h2 {
@@ -67,4 +111,10 @@
 
   <ol>
     <li>Clone the repository:</li>
-    <pre><code>git clone https://github.com/mzeeshazafar28/jdt.git</code></pre
+    <pre><code style="color:green;">git clone https://github.com/mzeeshazafar28/jdt.git</code></pre>
+    <!-- Add more installation steps as needed -->
+  </ol>
+
+</body>
+
+</html>
